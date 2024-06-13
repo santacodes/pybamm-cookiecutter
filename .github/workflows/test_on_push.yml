@@ -48,7 +48,7 @@ jobs:
           uv-venv: ".venv"
 
       - name: Install nox
-        run: uv pip install nox[uv]
+        run: uv pip install nox
 
       - name: Test Template Generation
         run: |
