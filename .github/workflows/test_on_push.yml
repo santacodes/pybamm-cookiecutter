@@ -138,4 +138,5 @@ jobs:
         uses: wntrblm/nox@2024.04.15
 
       - name: Test the generated project
-        run: nox -s generated-project-tests --working-directory=../pybamm-${{ matrix.backend }}-${{ matrix.vcs }}
+        working-directory: ../pybamm-${{ matrix.backend }}-${{ matrix.vcs }}
+        run: nox -s generated-project-tests
